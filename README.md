@@ -7,6 +7,7 @@ Edit by Jidong Lang; E-mail: langjidong@hotmail.com;
 ===============================================
 
 Option
+
         -fq     <Input File>    Input *.fq file
         -path1  <Assembly Method 1>     The path of assembly method/software, default: /usr/bin/canu
         -path2  <Assembly Method 2>     The path of assembly method/software, default: /usr/bin/flye

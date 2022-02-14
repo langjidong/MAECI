@@ -1,10 +1,9 @@
 # MAECI
-MAECI: A Tool For Integrating Multiple Assemblies Into A Consensus Sequence Base On Nanopore Sequencing Data
+MAECI: A Tool For Generating Consensus Nanopore Sequencing Long-read Assemblies and Error Correction
 
-===============================================
+=====================================================
 Edit by Jidong Lang; E-mail: langjidong@hotmail.com;
-===============================================
-
+=====================================================
 Option
 
         -fq     <Input File>    Input *.fq file

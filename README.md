@@ -1,7 +1,6 @@
 # MAECI
 MAECI: A Tool For Integrating Multiple Assemblies Into A Consensus Sequence Base On Nanopore Sequencing Data
 
-Usage:
 ===============================================
 Edit by Jidong Lang; E-mail: langjidong@hotmail.com;
 ===============================================

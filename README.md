@@ -24,3 +24,7 @@ perl /mnt/nas/bioinfo/langjidong/PERL/software/Third-Generation/Pipeline/Multipl
 Note: There are other options for assembling methods/softwares, and theoretically one method is also possible. But we suggest that should better choose at least 3 methods. If you want to change the assembly methods, please modify the command line (Line 75-87) in this script.
 
 Contact: langjidong@hotmail.com
+
+**Publications**
+
+Lang J. MAECI: A pipeline for generating consensus sequence with nanopore sequencing long-read assembly and error correction. PLoS One. 2022 May 20;17(5):e0267066. doi: 10.1371/journal.pone.0267066. PMID: 35594250; PMCID: PMC9122195.

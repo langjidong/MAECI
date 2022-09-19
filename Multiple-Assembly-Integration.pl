@@ -133,16 +133,16 @@ while(<IN2>)
 
 `minimap2 -d $t1[0] $t1[1]`;
 `minimap2 -a -x map-ont $t1[0] $outputdir/clean_data/$basename.fq -t $process > $outputdir/self-correction/temp.sam`;
-`racon -t $process $outputdir/clean_data/$basename.fq $outputdir/self-correction/temp.sam $t1[1] > $outputdir/self-correction/temp.fasta`;
+`$path4 -t $process $outputdir/clean_data/$basename.fq $outputdir/self-correction/temp.sam $t1[1] > $outputdir/self-correction/temp.fasta`;
 `minimap2 -d $outputdir/self-correction/temp.fasta $t1[2]`;
 `minimap2 -a -x map-ont $outputdir/self-correction/temp.fasta $outputdir/clean_data/$basename.fq -t $process > $outputdir/self-correction/temp.sam`;
-`racon -t $process $outputdir/clean_data/$basename.fq $outputdir/self-correction/temp.sam $t1[2] > $outputdir/self-correction/racon.raw.fasta`;
+`$path4 -t $process $outputdir/clean_data/$basename.fq $outputdir/self-correction/temp.sam $t1[2] > $outputdir/self-correction/racon.raw.fasta`;
 `minimap2 -a -x map-ont $outputdir/self-correction/racon.raw.fasta $outputdir/clean_data/$basename.fq -t $process > $outputdir/self-correction/temp.sam`;
-`racon -t $process $outputdir/clean_data/$basename.fq $outputdir/self-correction/temp.sam $outputdir/self-correction/racon.raw.fasta > $outputdir/self-correction/temp.fasta`;
+`$path4 -t $process $outputdir/clean_data/$basename.fq $outputdir/self-correction/temp.sam $outputdir/self-correction/racon.raw.fasta > $outputdir/self-correction/temp.fasta`;
 `minimap2 -a -x map-ont $outputdir/self-correction/temp.fasta $outputdir/clean_data/$basename.fq -t $process > $outputdir/self-correction/temp.sam`;
-`racon -t $process $outputdir/clean_data/$basename.fq $outputdir/self-correction/temp.sam $outputdir/self-correction/temp.fasta > $outputdir/self-correction/temp1.fasta`;
+`$path4 -t $process $outputdir/clean_data/$basename.fq $outputdir/self-correction/temp.sam $outputdir/self-correction/temp.fasta > $outputdir/self-correction/temp1.fasta`;
 `minimap2 -a -x map-ont $outputdir/self-correction/temp1.fasta $outputdir/clean_data/$basename.fq -t $process > $outputdir/self-correction/temp.sam`;
-`racon -t $process $outputdir/clean_data/$basename.fq $outputdir/self-correction/temp.sam $outputdir/self-correction/temp1.fasta > $outputdir/self-correction/racon.final.fasta`;
+`$path4 -t $process $outputdir/clean_data/$basename.fq $outputdir/self-correction/temp.sam $outputdir/self-correction/temp1.fasta > $outputdir/self-correction/racon.final.fasta`;
 `rm -rf $outputdir/self-correction/temp.sam $outputdir/self-correction/temp.fasta $outputdir/self-correction/temp1.fasta $t1[0] $t1[1] $t1[2]`;
 close IN2;
 
